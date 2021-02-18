@@ -1,53 +1,74 @@
-.card-product {
-  width: 400px;
-  margin: auto;
-  background-color: white;
-  padding: 16px;
+.card-product-middle {
+  height: 152px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 4px;
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
-.card-product-top {
+.card-product-bottom {
   display: flex;
   justify-content: space-between;
 }
 
+.card-product-bottom img {
+  height: 72px;
+  width: 10%;
+  flex-grow: 1;
+  margin: 0 8px;
+  border-radius: 4px;
+}
+  .card-product-bottom img:hover {
+    border: 2px solid goldenrod;
+    box-sizing: border-box;
+  }
+
+.card-product-bottom img:first-child {
+  margin-left: 0;
+}
+
+.card-product-bottom img:last-child {
+  margin-right: 0;
+}
+
+.card-product {
+  width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 16px 36px rgb(0 0 0 / 20%);
+  padding: 16px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.card-product-top {
+  display: flex;
+}
+
 .card-product-top-image {
   width: 50%;
-  background-size: cover;
   flex-shrink: 0;
   border-radius: 4px;
 }
 
-.card-product-middle {
-  height: 152px;
-  width: 100%;
-  margin: 16px 0;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 4px;
-}
+  .card-product-top-image i {
+    color: goldenrod;
+    margin: 8px;
+    font-size: 24px;
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+
+  .card-product-top-image i:hover {
+    color: #f4cc67;
+  }
 
 .card-product-info {
   padding: 0 16px;
 }
 
-
-.card-product-bottom {
-  display: flex;
+.card-product-info > i {
+  color: goldenrod;
 }
-  .card-product-bottom img {
-    height: 72px;
-    flex-grow: 1;
-    object-fit: cover;
-    margin: 0 8px;
-    border-radius: 4px;
-  }
 
-    .card-product-bottom img:first-child {
-      margin-left: 0;
-    }
-
-    .card-product-bottom img:last-child {
-      margin-right: 0;
-    }
+.card-product > div, .card-product > img  {
+  margin: 4px 0;
+}
